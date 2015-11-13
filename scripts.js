@@ -35,14 +35,14 @@ function comparison() {
 
 function concatenator() {
   var ok = true;
-  var response = prompt("What is your favorite movie?");
+  var response = prompt("Who is your favorite superhero?");
   while (ok===true) {
-    if (confirm("Cool, think of another one.")) {
+    if (confirm("Cool, think of another one or click 'Cancel' if you can't think of anything else.")) {
      response += " ";
-      response += prompt("What else? Click 'Cancel' if you can't think of anything else.");
+      response += prompt("Who else?");
     } else {
         ok = false;
-        alert("Okay, so your favorite movies are: " + response);
+        alert("Okay, so your favorite superheroes are: " + response);
     }
   }
 }
